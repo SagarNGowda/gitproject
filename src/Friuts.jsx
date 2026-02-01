@@ -1,4 +1,5 @@
 export default Friuts;
+import Friut from "./Friut";
 
 function Friuts() {
   //const friuts = ["Apple", "Banana", "Orange", "Mango", "Pineapple"];
@@ -13,17 +14,23 @@ function Friuts() {
   return (
     <div>
       <ul>
-        {fruits.map((fruit, index) => (
-          <li key={index}>
-            {fruit.name} - ${fruit.price}{" "}
-            <span
-              className="emoji laugh"
-              role="img"
-              aria-label={`${fruit.name} laughing`}
-            >
-              {fruit.emoji}
-            </span>
-          </li>
+        {fruits.map((fruit) => (
+          // <li key={index}>
+          //   {fruit.name} - ${fruit.price}{" "}
+          //   <span
+          //     className="emoji laugh"
+          //     role="img"
+          //     aria-label={`${fruit.name} laughing`}
+          //   >
+          //     {fruit.emoji}
+          //   </span>
+          // </li>
+          <Friut
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            emoji={fruit.emoji}
+          />
         ))}
       </ul>
     </div>
