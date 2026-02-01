@@ -15,7 +15,14 @@ function Friuts() {
       <ul>
         {fruits.map((fruit, index) => (
           <li key={index}>
-            {fruit.name} - ${fruit.price} {fruit.emoji}
+            {fruit.name} - ${fruit.price}{" "}
+            <span
+              className="emoji laugh"
+              role="img"
+              aria-label={`${fruit.name} laughing`}
+            >
+              {fruit.emoji}
+            </span>
           </li>
         ))}
       </ul>

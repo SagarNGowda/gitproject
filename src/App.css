@@ -111,3 +111,35 @@
     animation: none;
   }
 }
+
+/* Laughing animation */
+.emoji.laugh {
+  display: inline-block;
+  transform-origin: 50% 60%;
+  animation: laugh 1.2s ease-in-out infinite;
+}
+@keyframes laugh {
+  0% {
+    transform: translateY(0) rotate(0) scale(1);
+  }
+  15% {
+    transform: translateY(-3px) rotate(-10deg) scale(1.05);
+  }
+  30% {
+    transform: translateY(0) rotate(10deg) scale(0.98);
+  }
+  45% {
+    transform: translateY(-2px) rotate(-8deg) scale(1.03);
+  }
+  60% {
+    transform: translateY(0) rotate(8deg) scale(0.99);
+  }
+  100% {
+    transform: translateY(0) rotate(0) scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .emoji.laugh {
+    animation: none;
+  }
+}
