@@ -2,10 +2,10 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Hello from "./Hello.jsx";
-
+import ConditionalComponent from "./ConditionalComponent.jsx";
 import "./App.css";
 import Friuts from "./Friuts.jsx";
-
+import TernaryOperator from "./TernaryOperator.jsx";
 const person = {
   name: "Sagar",
   message: "Welcome to React!",
@@ -17,7 +17,9 @@ function App() {
   return (
     <div className="App">
       {/* <Hello person={person} /> */}
-      {<Friuts />}
+      {/* {<Friuts />} */}
+      {/* {<ConditionalComponent isLoggedIn={false} />} */}
+      {<TernaryOperator loggedIn={false} />}
     </div>
   );
 }
