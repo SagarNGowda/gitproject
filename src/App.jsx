@@ -17,9 +17,9 @@ function App() {
   return (
     <div className="App">
       {/* <Hello person={person} /> */}
-      {/* {<Friuts />} */}
+      {<Friuts />}
       {/* {<ConditionalComponent isLoggedIn={false} />} */}
-      {<TernaryOperator loggedIn={false} />}
+      {/* {<TernaryOperator loggedIn={false} />} */}
     </div>
   );
 }
