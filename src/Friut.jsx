@@ -1,9 +1,19 @@
-export default function Friut({ name, price, emoji }) {
+export default function Friut({ name, price, emoji, soldout }) {
   return (
-    <div>
+    <>
       <li>
-        {emoji} {name} - ${price}
+        {/* {emoji} {name} - ${price}
+        {price >= 5 ? (
+          <h3>
+            {emoji} {name} - ${price}
+          </h3>
+        ) : null} */}
+        {soldout ? (
+          <h3>
+            {emoji} {name} - ${price}
+          </h3>
+        ) : null}
       </li>
-    </div>
+    </>
   );
 }
